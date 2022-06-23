@@ -18,7 +18,7 @@ public class LifeCycleTest {
 
     @BeforeEach
     void beforeEach() {
-        System.out.println("Before each test");
+        System.out.println("Before each test.");
     }
 
     @AfterEach
