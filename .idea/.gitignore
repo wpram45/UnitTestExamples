@@ -9,3 +9,4 @@ misc.xml
 vcs.xml
 workspace.xml
 ./codeStyles
+/codeStyles/Project.xml
