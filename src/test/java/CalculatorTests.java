@@ -3,10 +3,7 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.EmptySource;
-import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.params.provider.NullAndEmptySource;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.*;
 
 import java.util.List;
 
@@ -18,6 +15,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 class CalculatorTests{
+
+
+     @ParameterizedTest
+     @MethodSource("argFactory")
+
+     void testStringLength(String str,int length){
+            assertEquals(length,str.length());
+     }
+
+     static List<Arguments> argFactory(){
+         return List.of(Arguments.arguments("apple",5),Arguments.arguments("watermelon",10));
+     }
+
 
 
     @ParameterizedTest
