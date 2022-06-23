@@ -3,3 +3,9 @@
 /workspace.xml
 ../target
 ../.idea
+compiler.xml
+jarRepositories.xml
+misc.xml
+vcs.xml
+workspace.xml
+./codeStyles
